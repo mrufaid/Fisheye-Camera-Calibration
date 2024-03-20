@@ -1,2 +1,2 @@
 # Fisheye-Camera-Calibration
-Performing fish eye camera calibration by obtaining an image from simulating a camera in blender. 
+Performing fish eye camera calibration by obtaining images from simulating a fisheye camera in blender. 
