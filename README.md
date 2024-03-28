@@ -5,7 +5,7 @@
 
 Fisheye cameras deviate from the traditional pinhole camera model in terms of their optics and resulting image projection. Instead of using a small aperture and relying on perspective projection, fisheye cameras typically use wide-angle lenses with a highly curved field of view. This results in a distinct fisheye effect where straight lines in the scene are heavily distorted, appearing curved in the image. The adantages of using lens in cameras are wider field of view, more light exposure. However, they also introduce additional distortion in images such barrel distortion and pincusion distortion. Thus, we have to find the distortion coefficients to correct the distortion.
 
-![alt text](image-1.png)
+![alt text](New folder\image-1.png)
 
 ### Intrinsic parameters:
 
