@@ -5,7 +5,7 @@
 
 Fisheye cameras deviate from the traditional pinhole camera model in terms of their optics and resulting image projection. Instead of using a small aperture and relying on perspective projection, fisheye cameras typically use wide-angle lenses with a highly curved field of view. This results in a distinct fisheye effect where straight lines in the scene are heavily distorted, appearing curved in the image. The adantages of using lens in cameras are wider field of view, more light exposure. However, they also introduce additional distortion in images such barrel distortion and pincusion distortion. Thus, we have to find the distortion coefficients to correct the distortion.
 
-![alt text](New folder\image-1.png)
+![alt text](New_folder\image-1.png)
 
 ### Intrinsic parameters:
 
@@ -27,7 +27,7 @@ Translation Vector (t): A 3x1 vector representing the translation of the camera'
 
 ### Lens Distortion: 
 Distortions caused by imperfections in the camera's lens system, including radial distortion (barrel distortion or pincushion distortion) and tangential distortion. Distortion parameters are often represented using radial and tangential distortion coefficients.
-![alt text](image-2.png)
+![alt text](New_folder/image-2.png)
 
 # Method
 
@@ -38,7 +38,11 @@ A model of a chessboard is downloaded from the web and placed in the field of vi
 
 In order to perform the camera calibration and distortion correction, we need to obtain camera matrix, distortion coefficients, translation matrix and rotation matrix.
 
-![alt text](Capture-1.png)
+
+
+
+![Alt Text](New_folder/Capture-1.png)
+
 
 
 ## Camera Calibration
