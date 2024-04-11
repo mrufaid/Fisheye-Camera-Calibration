@@ -66,3 +66,73 @@ The collected object points and image points are used to calibrate the camera, r
 
 The obtained camera calibration parameters are used to undistort images captured by the camera. The `undistort` function is applied to remove lens distortion, followed by cropping to remove black borders.
 
+
+
+
+----------------------------------------------------------------
+
+To calculate the size of the camera sensor (d) when the vertical field of view (FOV) is 120 degrees and fy (the focal length in the vertical direction) is 552.7, we can use a similar approach as before, but this time considering the vertical direction. 
+
+The formula relating FOV, d, and fy is:
+
+FOV = 2 × atan ( d / (2fy) )
+
+Rearranging this formula to solve for d:
+
+d = 2 × fy × tan ( FOV / 2 )
+
+Given that FOV = 120 degrees and fy = 552.7, we can plug these values into the formula to find d:
+
+d = 2 × 552.7 × tan ( 120° / 2 )
+
+d = 2 × 552.7 × tan(60°)
+
+d = 2 × 552.7 × tan(π/3)
+
+d = 2 × 552.7 × √3
+
+d ≈ 1905.92
+
+So, when the vertical field of view is 120 degrees and fy is 552.7, the size of the camera sensor (d) is approximately **1905.92.**
+
+### Replicating a Leopard camera model *LI-VENUS-OX03D4C-GM2A-124H* witha field of view of 124 degrees(H) and reslution of 1920 (H) x 1536 (V)
+---
+required parameters of focal length:
+
+Given:
+- d = 1905.92
+- FOV_horizontal = 124°
+
+
+FOV_vertical:
+
+aspect ratio = To find the vertical field of view (FOV) of the camera, you can use the aspect ratio of the resolution along with the horizontal FOV.
+
+The aspect ratio of the resolution is given by:
+
+Aspect Ratio = Width / Height
+
+For the given resolution of 1920 (H) x 1536 (V), the aspect ratio is:
+
+Aspect Ratio = 1920 / 1536 ≈ 1.25
+
+Now, since the horizontal FOV is 124 degrees, we can use the aspect ratio to find the vertical FOV:
+
+Vertical FOV = Horizontal FOV / Aspect Ratio
+
+Vertical FOV = 124 / 1.25 ≈ 99.2 degrees
+
+So, the vertical field of view of the camera is approximately 99.2 degrees.
+
+---
+## Now find new fx and fy 
+Using the formulas:
+
+f_x = d / (2 * tan(FOVx/ 2))
+f_y = d / (2 * tan(FOVy/ 2))
+
+f_x ≈ 509.3
+f_y ≈ 770.5
+
+So, when d = 1905.92 and both horizontal and vertical FOVx and FOVy are changed to 124° and 99.2° respectively, the focal lengths f_x and f_y are approximately 509.3 and 770.5 respectively.
+
